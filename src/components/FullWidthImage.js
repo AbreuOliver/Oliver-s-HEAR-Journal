@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
-import lightPurple from "../components/colors";
 
 export default function FullWidthImage(props) {
 	const {
@@ -75,8 +74,8 @@ export default function FullWidthImage(props) {
 									// boxShadow:
 									// 	"rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
 									// backgroundColor: "rgb(255, 68, 0)",
-									backgroundColor: { lightPurple },
-									color: "#11232F",
+									backgroundColor: "#464b4b",
+									color: "white",
 									lineHeight: "1",
 									padding: "0.25em",
 								}}

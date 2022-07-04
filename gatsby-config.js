@@ -5,6 +5,7 @@ module.exports = {
 	},
 	plugins: [
 		"gatsby-plugin-react-helmet",
+
 		{
 			resolve: "gatsby-plugin-sass",
 			options: {
@@ -64,6 +65,12 @@ module.exports = {
 						},
 					},
 				],
+			},
+		},
+		{
+			resolve: `gatsby-transformer-remark`,
+			options: {
+				plugins: ["gatsby-remark-bracketed-spans"],
 			},
 		},
 		{

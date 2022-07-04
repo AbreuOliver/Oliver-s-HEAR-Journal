@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 import logo_black from "../img/logo_black.svg";
-import lightPurple from "../components/colors";
 
 const Navbar = class extends React.Component {
 	constructor(props) {
@@ -41,6 +40,9 @@ const Navbar = class extends React.Component {
 				style={{
 					color: "white",
 					backgroundColor: "#6fb970",
+					position: "fixed",
+					top: "0",
+					width: "100%",
 				}}
 			>
 				<div className="container">
@@ -48,7 +50,6 @@ const Navbar = class extends React.Component {
 						className="navbar-brand"
 						style={{
 							alignItems: "center",
-							// backgroundColor: "#100823",
 							backgroundColor: "#6fb970",
 						}}
 					>

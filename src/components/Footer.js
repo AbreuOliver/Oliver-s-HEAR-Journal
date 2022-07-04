@@ -11,12 +11,15 @@ const Footer = class extends React.Component {
 				className="footer has-text-white-ter"
 				style={{
 					backgroundColor: "#202121",
+					height: "100%",
+					width: "100vw",
 				}}
 			>
 				<div
 					className="content has-text-centered"
 					style={{
 						width: "100vw",
+						height: "100%",
 						display: "flex",
 						justifyContent: "center",
 						alignItems: "center",
@@ -26,26 +29,27 @@ const Footer = class extends React.Component {
 						src={logo_green}
 						alt="Hear Journal"
 						style={{
-							width: "auto",
+							width: "100%",
 							height: "5.5rem",
-							marginBottom: "1rem",
+							// marginBottom: "1rem",
 						}}
 					/>
 				</div>
 				<div className="content has-text-centered has-text-white-ter">
 					<div className="container has-text-white-ter">
 						<div
-							style={{ maxWidth: "100vw" }}
+							style={{ width: "100vw" }}
 							className="columns"
 						>
 							<div
 								style={{
-									width: "95%",
-									height: "auto",
+									width: "100vw",
+									height: "100%",
 									display: "flex",
 									justifyContent: "center",
 									alignItems: "center",
-									marginBottom: "2.5rem",
+									color: "white",
+									paddingBottom: "2.5rem",
 									// color: "#333",
 								}}
 							>

@@ -21,6 +21,7 @@ export const BlogPostTemplate = ({
 		<section
 			className="section"
 			style={{
+				paddingTop: "100px",
 				backgroundColor: "#464b4b",
 				color: "white",
 			}}
@@ -34,7 +35,12 @@ export const BlogPostTemplate = ({
 				}}
 			>
 				<div className="columns">
-					<div className="column is-10 is-offset-1">
+					<div
+						className="column is-10 is-offset-1"
+						style={{
+							color: "white",
+						}}
+					>
 						<h1
 							className="title is-size-2 has-text-weight-bold is-bold-light"
 							style={{
@@ -44,18 +50,40 @@ export const BlogPostTemplate = ({
 						>
 							{title}
 						</h1>
-						<p>{description}</p>
-						<PostContent content={content} 	style={{
-				backgroundColor: "#464b4b",
-				color: "white",
-			}} />
+						<p
+							style={{
+								color: "white",
+							}}
+						>
+							{description}
+						</p>
+						<PostContent
+							content={content}
+							style={{
+								color: "white",
+							}}
+						/>
 						{tags && tags.length ? (
-							<div style={{ marginTop: `4rem` }}>
-								<h4>Tags</h4>
+							<div
+								style={{
+									marginTop: `4rem`,
+									color: "white",
+								}}
+							>
+								<h4
+									style={{
+										color: "white",
+									}}
+								>
+									Tags
+								</h4>
 								<ul className="taglist">
 									{tags.map((tag) => (
 										<li key={tag + `tag`}>
 											<Link
+												style={{
+													color: "#6fb970",
+												}}
 												to={`/tags/${kebabCase(
 													tag
 												)}/`}

@@ -16,6 +16,7 @@ const Content = ({ content, className }) => (
 		className={className}
 		style={{
 			backgroundColor: "#464b4b !important",
+			color: "white",
 		}}
 	>
 		{content}

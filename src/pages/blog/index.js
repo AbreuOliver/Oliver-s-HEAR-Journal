@@ -2,7 +2,6 @@ import * as React from "react";
 
 import Layout from "../../components/Layout";
 import BlogRoll from "../../components/BlogRoll";
-import lightPurple from "../../components/colors";
 
 export default class BlogIndexPage extends React.Component {
 	render() {
@@ -17,10 +16,9 @@ export default class BlogIndexPage extends React.Component {
 					<h1
 						className="has-text-weight-bold is-size-1"
 						style={{
-							boxShadow:
-								"0.5rem 0 0 #fff, -0.5rem 0 0 #fff",
-							backgroundColor: "white",
-							color: "#202121",
+							// boxShadow:
+							// 	"0.5rem 0 0 #fff, -0.5rem 0 0 #fff",
+							backgroundColor: "#363636",
 							padding: "1rem 2.5rem 1rem 2.5rem",
 						}}
 					>

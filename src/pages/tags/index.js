@@ -17,6 +17,7 @@ const TagsPage = ({
 			className="section"
 			style={{
 				backgroundColor: "#464b4b",
+				paddingTop: "100px",
 			}}
 		>
 			<Helmet title={`Tags | ${title}`} />
@@ -26,10 +27,20 @@ const TagsPage = ({
 						className="column is-10 is-offset-1"
 						style={{ marginBottom: "6rem" }}
 					>
-						<h1 className="title is-size-2 is-bold-light">
+						<h1
+							className="title is-size-2 is-bold-light"
+							style={{
+								color: "white",
+							}}
+						>
 							Tags
 						</h1>
-						<ul className="taglist">
+						<ul
+							className="taglist"
+							style={{
+								color: "#6fb970",
+							}}
+						>
 							{group.map((tag) => (
 								<li key={tag.fieldValue}>
 									<Link
